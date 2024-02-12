@@ -11,6 +11,11 @@ const puppeteer = require("puppeteer");
         height: 1080,
         deviceScaleFactor: 1
     });
+    await page.setCookie({
+        name: "region",
+        value: "8",
+        domain: "www.vprok.ru"
+    });
     await page.goto(url, { waitUntil: "networkidle2" });
 
     // Скриншот страницы
