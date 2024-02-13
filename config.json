@@ -1,0 +1,38 @@
+{
+    "regionList": [
+        {
+            "name": "Москва и область",
+            "regionId": 1
+        },
+        {
+            "name": "Санкт-Петербург и область",
+            "regionId": 2
+        },
+        {
+            "name": "Владимирская обл.",
+            "regionId": 8
+        },
+        {
+            "name": "Калужская обл.",
+            "regionId": 12
+        },
+        {
+            "name": "Рязанская обл.",
+            "regionId": 26
+        },
+        {
+            "name": "Тверская обл.",
+            "regionId": 33
+        },
+        {
+            "name": "Тульская обл.",
+            "regionId": 34
+        }
+    ],
+    "selectorList": [
+        { "name": "price", "value": ".Price_size_XL__MHvC1" },
+        { "name": "priceOld", "value": ".Price_role_old__r1uT1" },
+        { "name": "rating", "value": ".Rating_value__S2QNR" },
+        { "name": "reviewCount", "value": ".ActionsRow_reviews__AfSj_" }
+    ]
+}
