@@ -26,7 +26,7 @@ bash script.sh
 
 ## Results
 
-Results of running script.sh are zipped in `results.zip`.
+Results of running script.sh are zipped in separed archives in `results` folder.
 
 ## Config
 
