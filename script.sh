@@ -27,10 +27,10 @@ COUNTER=0
 
 for link in "${LINKS[@]}"
 do
-   echo "checking $link link"
+   echo "checking $link"
    for region in "${REG[@]}"
    do
-    echo "checking $region link"
+    echo "$region"
     COUNTER=$(expr $COUNTER + 1)
         node index.js $link "${region}" $COUNTER
    done

@@ -5,12 +5,12 @@ var fs = require("fs");
 (async () => {
     const url = process.argv[2];
     const region = process.argv[3];
-    const id = process.argv[4];
+    const id = process.argv[4] ? process.argv[4] : "";
     let savePath = "./results/" + region;
     fs.mkdir(savePath, { recursive: true }, (err) => {
         if (err) throw err;
     });
-    savePath += "/" + id + "_";
+    savePath += "/" + (id ? id + "_" : "");
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
