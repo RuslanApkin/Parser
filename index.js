@@ -31,6 +31,10 @@ var fs = require("fs");
 
     await page.goto(url, { waitUntil: "networkidle2" });
 
+    await page.waitForNavigation({
+        waitUntil: "networkidle0"
+    });
+
     // Скриншот страницы
     await page.screenshot({
         path: savePath + "screenshot.jpg",
